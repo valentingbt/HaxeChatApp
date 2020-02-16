@@ -1,0 +1,9 @@
+-cp src
+-lib js-kit
+-lib hxnodejs
+-lib crypto
+-lib hxnodejs-ws
+-main Main 
+-js dist/main.js
+-debug
+--macro npm.Package.export("package.json")

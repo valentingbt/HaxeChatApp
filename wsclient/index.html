@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Chat App</title>
+</head>
+
+<body>
+
+  <div class="main-container">
+
+    <div class="left">
+      <h1 id="welcome">Welcome! Are you new here? <br> Awesome, you can...</h1>
+      <div class="form" id="register">
+        <h2>Subscribe</h2>
+        <form class="registerform">
+
+          <div class="form-input">
+            <label>Just write an <strong>e-mail</strong> here</label>
+            <input required name="email" class="input" type="email" value="">
+          </div>
+
+          <div class="form-input">
+            <label>Oh, we need your <strong>username</strong> too</label>
+            <input required name="login" class="input" type="text" value="">
+          </div>
+
+          <div class="form-input">
+            <label>A <strong>password</strong>, and we're all done</label>
+            <input required name="password" class="input" type="password" value="">
+          </div>
+          <div class="form-input">
+            <input class="submit" type="submit" value="Let me in">
+          </div>
+          <div id="info">
+          </div>
+        </form>
+      </div>
+      <div class="form" id="login">
+        <h1>Not a newcomer? <br> Not a problem, you can also...</h1>
+
+        <h2>Log In</h2>
+        <form class="loginform">
+
+          <div class="form-input">
+            <label>What is your <strong>username</strong> again?</label>
+            <input required name="username" class="input" type="text">
+          </div>
+
+          <div class="form-input">
+            <label>We promess we won't share your <strong>password</strong></label>
+            <input required name="password" class="input" type="password">
+          </div>
+
+          <div id="error"></div>
+
+          <div class="form-input">
+            <input class="submit" type="submit" value="Let's chat">
+          </div>
+
+        </form>
+      </div>
+      <form class="exit">
+        <input class="submit" type="submit" value="Disconnect">
+      </form>
+
+    </div>
+
+    <div class="right">
+      <div class="title">
+        <h1>MESSAGES APP!</h1>
+        <h2 class="login-message">Log in or subscribe to see the chat</h2>
+      </div>
+      <div id="chat">
+        <form class="chatform">
+          <ul class="messages"></ul>
+          <div class="write">
+            <input placeholder="Your message here" name="message" class="input">
+            <input value="Send" class="submit" type="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <script src="client.js"></script>
+</body>
+
+</html>
